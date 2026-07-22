@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/og.png" width="900" alt="Hebrus Studio — Metal first. SSD when memory ends.">
+</p>
+
 # Hebrus Studio website
 
 The open-source editorial landing page for [Hebrus](https://github.com/andreaborio/hebrus)
@@ -41,8 +45,8 @@ not the future Developer ID–signed and notarized public release.
 
 ## Content and release policy
 
-- The final Hebrus Studio logo is being replaced. Until then, keep the temporary
-  H mark text-based and styled in CSS.
+- Keep `public/og.png` as the canonical typographic Hebrus Studio banner used by
+  the site and ecosystem documentation.
 - Update screenshots from the Hebrus Studio repository before a release.
 - Publish a replacement DMG only after recording its version, size and SHA-256.
 - Do not describe an ad-hoc build as a notarized or official public release.
