@@ -1,8 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const assetPath = (path: string) => `${basePath}${path}`;
 const studioDownloadUrl = "https://github.com/andreaborio/hebrus-studio/releases/download/hebrus-studio-v0.4.0-dev.1/Hebrus-Studio-0.4.0-macOS-arm64.dmg";
 
 const proofPoints = [
@@ -25,15 +21,13 @@ const productCards = [
     eyebrow: "Model library",
     title: "Bring your GGUFs. Know what runs.",
     body: "Hebrus scans local files, checks compatibility, and keeps model setup visible.",
-    image: assetPath("/media/02-models.png"),
-    alt: "Local model library in Hebrus Studio",
+    points: ["Local discovery", "Exact compatibility", "Revision-pinned sources"],
   },
   {
     eyebrow: "Runtime",
     title: "One switch for the local engine.",
     body: "Turn it on, see the active model, and understand the current memory mode.",
-    image: assetPath("/media/03-server.png"),
-    alt: "Hebrus Studio local inference server controls",
+    points: ["Metal execution", "Adaptive residency", "Visible runtime state"],
   },
 ];
 
@@ -82,12 +76,19 @@ export default function Home() {
           </div>
           <p className="releaseMeta">macOS 13+ / Apple Silicon / v0.4.0 development preview</p>
         </div>
-        <div className="heroVisual" aria-label="Hebrus Studio preview">
-          <div className="windowBar">
+        <div className="heroVisual" aria-label="Hebrus Studio identity and runtime principles">
+          <div className="visualHeader">
             <span>Hebrus Studio</span>
-            <span>Private local session</span>
+            <span>Local / private</span>
           </div>
-          <Image src={assetPath("/media/01-chat.png")} alt="Hebrus Studio running a private local chat" width={1280} height={720} priority />
+          <div className="visualCanvas">
+            <p className="visualWordmark">Hebrus<br /><em>Studio</em></p>
+            <div className="visualMonogram" aria-hidden="true">H</div>
+          </div>
+          <div className="visualFooter">
+            <span>Metal first.</span>
+            <span>SSD when memory ends.</span>
+          </div>
         </div>
       </section>
 
@@ -117,9 +118,11 @@ export default function Home() {
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </div>
-              <div className="screenFrame">
-                <Image src={item.image} alt={item.alt} width={1280} height={720} sizes="(max-width: 900px) 100vw, 560px" />
-              </div>
+              <ul className="productSignal" aria-label={`${item.title} capabilities`}>
+                {item.points.map((point, index) => (
+                  <li key={point}><span>0{index + 1}</span>{point}</li>
+                ))}
+              </ul>
             </article>
           ))}
         </div>

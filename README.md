@@ -47,7 +47,8 @@ not the future Developer ID–signed and notarized public release.
 
 - Keep `public/og.png` as the canonical typographic Hebrus Studio banner used by
   the site and ecosystem documentation.
-- Update screenshots from the Hebrus Studio repository before a release.
+- Keep product visuals typographic until new screenshots match the released UI
+  and canonical identity.
 - Publish a replacement DMG only after recording its version, size and SHA-256.
 - Do not describe an ad-hoc build as a notarized or official public release.
 - Preserve the project lineage and technical references in the open-source
@@ -57,7 +58,7 @@ not the future Developer ID–signed and notarized public release.
 
 - `app/page.tsx` — page structure and copy
 - `app/globals.css` — editorial layout and responsive design
-- `public/media/` — product screenshots
+- `public/media/` — retained historical product captures, not rendered publicly
 - `public/og.png` — social sharing card
 - `.github/workflows/pages.yml` — tested GitHub Pages deployment
 
