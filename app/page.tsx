@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const assetPath = (path: string) => `${basePath}${path}`;
-const studioDownloadUrl = "https://github.com/andreaborio/dsbox/releases/download/hebrus-studio-v0.4.0-dev.1/Hebrus-Studio-0.4.0-macOS-arm64.dmg";
+const studioDownloadUrl = "https://github.com/andreaborio/hebrus-studio/releases/download/hebrus-studio-v0.4.0-dev.1/Hebrus-Studio-0.4.0-macOS-arm64.dmg";
 
 const proofPoints = [
   {
@@ -76,7 +76,7 @@ export default function Home() {
               <span>Download for macOS</span>
               <span aria-hidden="true">&darr;</span>
             </a>
-            <a className="textLink" href="https://github.com/andreaborio/dsbox">
+            <a className="textLink" href="https://github.com/andreaborio/hebrus-studio">
               View source <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -194,8 +194,8 @@ export default function Home() {
             and <a href="https://github.com/ml-explore/mlx">MLX</a> as technical references.
           </p>
           <div className="sourceLinks">
-            <a href="https://github.com/andreaborio/ds4">Engine source <span aria-hidden="true">&rarr;</span></a>
-            <a href="https://github.com/andreaborio/dsbox">Studio source <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://github.com/andreaborio/hebrus">Engine source <span aria-hidden="true">&rarr;</span></a>
+            <a href="https://github.com/andreaborio/hebrus-studio">Studio source <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
