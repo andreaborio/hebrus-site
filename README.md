@@ -1,7 +1,7 @@
 # Hebrus Studio website
 
-The open-source editorial landing page for [Hebrus](https://github.com/andreaborio/ds4)
-and [Hebrus Studio](https://github.com/andreaborio/dsbox): local inference built
+The open-source editorial landing page for [Hebrus](https://github.com/andreaborio/hebrus)
+and [Hebrus Studio](https://github.com/andreaborio/hebrus-studio): local inference built
 first for Apple Metal and adaptive SSD streaming.
 
 **Live site:** [andreaborio.github.io/hebrus-site](https://andreaborio.github.io/hebrus-site/)
