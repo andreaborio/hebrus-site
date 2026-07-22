@@ -89,22 +89,32 @@ img {
   font-weight: 700;
 }
 
-.brand span {
+.brandName {
   font-family: var(--font-serif), Georgia, serif;
   font-size: 23px;
   font-weight: 400;
   letter-spacing: 0;
 }
 
-.brand img {
+.brandMark {
+  display: inline-flex;
   width: 31px;
   height: 31px;
-  object-fit: contain;
-  filter: drop-shadow(0 10px 12px rgba(21, 87, 255, 0.16));
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(21, 87, 255, 0.22);
+  border-radius: 9px;
+  background: linear-gradient(135deg, #ffffff, #e7eeff);
+  color: var(--blue);
+  box-shadow: 0 10px 22px rgba(21, 87, 255, 0.12);
+  font-family: var(--font-serif), Georgia, serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1;
   transition: transform 0.24s var(--ease-out);
 }
 
-.brand:hover img {
+.brand:hover .brandMark {
   transform: translateY(-1px) scale(1.03);
 }
 
@@ -777,7 +787,7 @@ img {
     display: none;
   }
 
-  .brand span {
+  .brandName {
     font-size: 21px;
   }
 

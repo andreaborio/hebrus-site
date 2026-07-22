@@ -35,10 +35,6 @@ export const metadata: Metadata = {
   applicationName: "Hebrus Studio",
   keywords: ["local AI", "Mac", "Apple Silicon", "Metal", "SSD streaming", "GGUF", "open source"],
   alternates: { canonical: canonicalUrl },
-  icons: {
-    icon: `${basePath}/media/hebrus-mark.png`,
-    apple: `${basePath}/media/hebrus-mark.png`,
-  },
   openGraph: {
     title: "Hebrus Studio — Local AI for Mac",
     description: "Private local AI for Apple Silicon. Metal first, SSD assisted.",

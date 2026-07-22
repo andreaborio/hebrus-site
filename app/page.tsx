@@ -37,6 +37,10 @@ const productCards = [
   },
 ];
 
+function BrandMark() {
+  return <span className="brandMark" aria-hidden="true">H</span>;
+}
+
 export const metadata: Metadata = {
   title: "Hebrus Studio — Local AI for Mac",
   description:
@@ -48,8 +52,8 @@ export default function Home() {
     <main>
       <nav className="nav shell" aria-label="Primary navigation">
         <a className="brand" href="#top" aria-label="Hebrus Studio home">
-          <Image src={assetPath("/media/hebrus-mark.png")} alt="" width={1254} height={1254} priority />
-          <span>Hebrus Studio</span>
+          <BrandMark />
+          <span className="brandName">Hebrus Studio</span>
         </a>
         <div className="navLinks">
           <a href="#product">Product</a>
@@ -198,8 +202,8 @@ export default function Home() {
 
       <footer className="footer shell">
         <a className="brand" href="#top">
-          <Image src={assetPath("/media/hebrus-mark.png")} alt="" width={1254} height={1254} />
-          <span>Hebrus Studio</span>
+          <BrandMark />
+          <span className="brandName">Hebrus Studio</span>
         </a>
         <p>Local inference for Apple Silicon.</p>
         <p>&copy; 2026 Hebrus contributors</p>

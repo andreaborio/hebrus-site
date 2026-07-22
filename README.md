@@ -41,8 +41,8 @@ not the future Developer ID–signed and notarized public release.
 
 ## Content and release policy
 
-- Keep the canonical Hebrus mark byte-identical to the source artwork. Visual
-  shadows belong in CSS.
+- The final Hebrus Studio logo is being replaced. Until then, keep the temporary
+  H mark text-based and styled in CSS.
 - Update screenshots from the Hebrus Studio repository before a release.
 - Publish a replacement DMG only after recording its version, size and SHA-256.
 - Do not describe an ad-hoc build as a notarized or official public release.
@@ -53,7 +53,7 @@ not the future Developer ID–signed and notarized public release.
 
 - `app/page.tsx` — page structure and copy
 - `app/globals.css` — editorial layout and responsive design
-- `public/media/` — canonical mark and product screenshots
+- `public/media/` — product screenshots
 - `public/og.png` — social sharing card
 - `.github/workflows/pages.yml` — tested GitHub Pages deployment
 
