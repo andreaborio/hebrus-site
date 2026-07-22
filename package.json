@@ -1,0 +1,40 @@
+{
+  "name": "hebrus-studio-site",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run build:pages",
+    "build:pages": "GITHUB_PAGES=true NEXT_PUBLIC_BASE_PATH=/hebrus-site NEXT_PUBLIC_SITE_ORIGIN=https://andreaborio.github.io next build",
+    "test": "npm run build:pages && node --test tests/pages-export.test.mjs",
+    "test:pages": "npm test",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
+  },
+  "dependencies": {
+    "next": "16.2.6",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3"
+  },
+  "overrides": {
+    "@babel/core": "7.29.7",
+    "brace-expansion": "1.1.16",
+    "fast-uri": "4.1.1",
+    "js-yaml": "5.2.1",
+    "postcss": "8.5.14",
+    "sharp": "0.35.0"
+  },
+  "type": "module"
+}
