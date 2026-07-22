@@ -19,15 +19,15 @@ const proofPoints = [
 const productCards = [
   {
     eyebrow: "Model library",
-    title: "Bring your GGUFs. Know what runs.",
-    body: "Hebrus scans local files, checks compatibility, and keeps model setup visible.",
-    points: ["Local discovery", "Exact compatibility", "Revision-pinned sources"],
+    title: "Models, without the guesswork.",
+    body: "Bring your local GGUFs. Hebrus identifies compatible models and keeps every source and revision visible before the engine starts.",
+    statement: "GGUF in. Certainty out.",
   },
   {
     eyebrow: "Runtime",
-    title: "One switch for the local engine.",
-    body: "Turn it on, see the active model, and understand the current memory mode.",
-    points: ["Metal execution", "Adaptive residency", "Visible runtime state"],
+    title: "One switch. No hidden state.",
+    body: "Start the local engine and see the active model, Metal execution, and resolved memory mode in one calm surface.",
+    statement: "Engine on. State visible.",
   },
 ];
 
@@ -106,8 +106,8 @@ export default function Home() {
           <p className="sectionLabel">The Studio</p>
           <h2>Less setup. More running.</h2>
           <p>
-            Hebrus Studio gives the engine a calm Mac surface: choose a model,
-            start the runtime, and chat locally.
+            A clear Mac interface between your models and the Hebrus engine.
+            Choose what runs, understand how it runs, then chat locally.
           </p>
         </div>
         <div className="productGrid">
@@ -118,11 +118,7 @@ export default function Home() {
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </div>
-              <ul className="productSignal" aria-label={`${item.title} capabilities`}>
-                {item.points.map((point, index) => (
-                  <li key={point}><span>0{index + 1}</span>{point}</li>
-                ))}
-              </ul>
+              <p className="productStatement">{item.statement}</p>
             </article>
           ))}
         </div>
