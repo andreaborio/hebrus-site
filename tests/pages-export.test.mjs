@@ -17,7 +17,7 @@ test("exports a complete GitHub Pages artifact", async () => {
   assert.match(html, /class="visualWordmark"/);
   assert.doesNotMatch(html, /\/hebrus-site\/media\/0[123]-/);
   assert.doesNotMatch(html, /\/hebrus-site\/media\/hebrus-mark\.png/);
-  assert.match(html, /github\.com\/andreaborio\/hebrus-studio\/releases\/download\/hebrus-studio-v0\.4\.0-dev\.1/);
+  assert.match(html, /github\.com\/andreaborio\/hebrus-studio\/releases\/download\/hebrus-studio-v0\.4\.0-dev\.2/);
   assert.match(html, /https:\/\/andreaborio\.github\.io\/hebrus-site\/og\.png/);
   assert.doesNotMatch(html, /dmg\.segment-/);
 });

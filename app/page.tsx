@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-const studioDownloadUrl = "https://github.com/andreaborio/hebrus-studio/releases/download/hebrus-studio-v0.4.0-dev.1/Hebrus-Studio-0.4.0-macOS-arm64.dmg";
+const studioDownloadUrl = "https://github.com/andreaborio/hebrus-studio/releases/download/hebrus-studio-v0.4.0-dev.2/Hebrus-Studio-0.4.0-macOS-arm64.dmg";
 
 const proofPoints = [
   {
@@ -74,7 +74,7 @@ export default function Home() {
               View source <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
-          <p className="releaseMeta">macOS 13+ / Apple Silicon / v0.4.0 development preview</p>
+          <p className="releaseMeta">macOS 13+ / Apple Silicon / v0.4.0 development preview 2</p>
         </div>
         <div className="heroVisual" aria-label="Hebrus Studio identity and runtime principles">
           <div className="visualHeader">
@@ -174,7 +174,7 @@ export default function Home() {
             <span>Download development DMG</span>
             <span aria-hidden="true">&darr;</span>
           </a>
-          <p className="downloadMeta">macOS 13+ / Apple Silicon / 126 MB / v0.4.0</p>
+          <p className="downloadMeta">macOS 13+ / Apple Silicon / 129 MB / v0.4.0 dev.2</p>
           <p className="installNote">
             Drag to Applications, then Control-click Open once for this preview.
           </p>
